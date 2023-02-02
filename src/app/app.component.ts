@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'input-output-decorator';
+  parentData = '';
+  childValue ='' ;
+  addParentValue(val: string){
+    this.parentData=val;
+  }
+
+  childTwoValue(val: string){
+    this.childValue=val
+  }
+
 }
