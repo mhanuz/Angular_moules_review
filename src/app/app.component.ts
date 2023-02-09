@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'view-enc-v1';
 }
 
-// ViewEncapsulation is a css style encapsulation policy
+// ViewEncapsulation is a css style encapsulation policy that makes a component more independent. 
+// hide the structure, style and behavior from other parts of the code.
