@@ -1,3 +1,11 @@
-<label for="input">Input Child 2 Value</label>
-<input type="text" id="input" #ch2Input>
-<button type="button" (click)="onAddcChildValue(ch2Input.value)" >add</button>
+<div>
+<label for="input">Input Child Component 2 Value</label>
+<input type="text" 
+id="input"
+class="form-control"
+#ch2Input>
+<button type="button"
+style="margin-top: 10px;"
+class="btn btn-success"
+(click)="onAddChildValue(ch2Input.value)" >Add</button>
+</div>

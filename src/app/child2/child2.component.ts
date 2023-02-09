@@ -8,7 +8,7 @@ import { Component,EventEmitter,Output } from '@angular/core';
 export class Child2Component {
 @Output()childTwoValue = new EventEmitter<string>;
 
-onAddcChildValue(val: string){
+onAddChildValue(val: string){
   this.childTwoValue.emit(val)
 }
 }
