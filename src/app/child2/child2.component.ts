@@ -11,6 +11,4 @@ export class Child2Component {
 onAddcChildValue(val: string){
   this.childTwoValue.emit(val)
 }
-
-
 }

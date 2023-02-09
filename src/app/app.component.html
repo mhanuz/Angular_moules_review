@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
+<div class="container">
     <h1>Use of Input Outpur Decorator</h1>
-
     <div>
       <label for="input"> Input Parent Value </label> 
       <input type="text" id="input" #parentValue >
       <button type="button" (click)="addParentValue(parentValue.value)">Add </button>
     </div>
-
       <app-child1 [parentItem] ="parentData"></app-child1>
       <app-child2 (childTwoValue)="childTwoValue($event)"></app-child2>
 
-      <p>Parent Value(from child 2):{{childValue}}</p>
-    
+      <p>Parent Value from child 2:{{childValue}}</p>
   </div>
 
-  
-</body>
-</html>
