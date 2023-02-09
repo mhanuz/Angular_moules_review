@@ -1,11 +1,18 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform, OnInit } from '@angular/core';
 
 @Pipe({
   name: 'nameswap'
 })
-export class NameSwapPipe implements PipeTransform {
-  firstName = '';
-  lastName = ''
+export class NameSwapPipe implements PipeTransform, OnInit {
+
+  firstName: string;
+  lastName: string;
+
+  ngOnInit(): void {
+    this.firstName = '';
+    this.lastName = '';
+  }
+
   transform(value: string): string {
       this.firstName=value.split(' ')[0]
       this.lastName=value.split(' ')[1]
