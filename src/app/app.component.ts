@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'view-enc-v1';
 }
+
+// ViewEncapsulation is a css style encapsulation policy
