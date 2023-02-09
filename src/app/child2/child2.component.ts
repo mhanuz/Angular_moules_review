@@ -12,3 +12,5 @@ onAddcChildValue(val: string){
   this.childTwoValue.emit(val)
 }
 }
+// output decorator: child component send data to parent component
+// EventEmitter notify parent component that child component wants to send data to parent component

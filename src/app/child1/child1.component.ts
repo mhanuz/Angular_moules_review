@@ -9,3 +9,6 @@ export class Child1Component  {
 @Input()parentItem ='Child Value';
 
 }
+// decorator: contains meta information about class property and method
+// input decorator update the data of child component, child component receives property value from parent component
+ 
